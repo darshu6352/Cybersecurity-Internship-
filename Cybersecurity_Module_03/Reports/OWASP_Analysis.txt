@@ -1,0 +1,32 @@
+# OWASP Top 10 – 2025 Analysis
+
+## Introduction
+OWASP Top 10 identifies important security risks in web applications. This analysis was performed using OWASP Juice Shop in a local testing environment.
+
+## OWASP Top 10 Categories
+
+1. Broken Access Control – Unauthorized access to protected resources.
+2. Security Misconfiguration – Incorrect or insecure security settings.
+3. Software Supply Chain Failures – Risks from vulnerable or compromised dependencies.
+4. Cryptographic Failures – Improper protection of sensitive information.
+5. Injection – Untrusted input affecting database queries or commands.
+6. Insecure Design – Security weaknesses in application design.
+7. Authentication Failures – Weaknesses in login and identity verification.
+8. Software or Data Integrity Failures – Failure to verify software or data integrity.
+9. Security Logging and Alerting Failures – Inadequate monitoring and security alerts.
+10. Mishandling of Exceptional Conditions – Improper handling of unexpected errors and conditions.
+
+## Practical Activities Performed
+
+- Website reconnaissance
+- HTTP request and response analysis
+- Authentication testing
+- SQL Injection testing
+- Cross-Site Scripting testing
+- Security header inspection
+- Cookie and JWT storage inspection
+- Login rate-limiting observation
+- Access control verification
+
+## Conclusion
+The practical exercises helped identify security observations and understand secure coding and remediation techniques. Further verification is required before treating observations as confirmed vulnerabilities.

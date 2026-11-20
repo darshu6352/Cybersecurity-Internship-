@@ -1,0 +1,21 @@
+XSS Remediation (Secure Coding)
+
+
+-----------------------------------
+
+1. Unsafe JavaScript code:
+
+
+element.innerHTML = userInput;
+
+
+-----------------------------------
+
+2. Secure JavaScript code:
+
+
+element.textContent = userInput;
+
+
+-----------------------------------
+

@@ -1,0 +1,23 @@
+------------------------------------
+Unsafe approach:
+
+
+if (password === storedPassword) {
+    loginUser();
+}
+
+------------------------------------
+
+Secure approach (conceptual):
+
+
+const isValid = await bcrypt.compare(
+    enteredPassword,
+    storedPasswordHash
+);
+
+if (isValid) {
+    loginUser();
+}
+
+

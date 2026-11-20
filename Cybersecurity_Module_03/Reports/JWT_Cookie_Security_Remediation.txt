@@ -1,0 +1,11 @@
+Finding: JWT token stored in Local Storage.
+
+Security Risks:
+- XSS attack ke through token access ho sakta hai.
+- Stolen token ka misuse ho sakta hai.
+Recommendations:
+1. Sensitive authentication tokens ke liye HttpOnly cookies consider karo.
+2. Cookies par Secure aur appropriate SameSite flags configure karo.
+3. Token ki expiry short rakho.
+4. Logout ke time session/token invalidate karo.
+5. XSS protection implement karo.

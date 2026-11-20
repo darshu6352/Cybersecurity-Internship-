@@ -1,0 +1,49 @@
+# MODULE 03 – DEMO WALKTHROUGH
+
+## Project
+OWASP Juice Shop – Web Application Security Testing
+
+## 1. Introduction
+This demonstration covers web application security testing using OWASP Juice Shop in a local sandbox environment.
+
+## 2. Environment Setup
+- Installed Node.js and npm.
+- Cloned OWASP Juice Shop repository.
+- Installed project dependencies.
+- Started the application using npm start.
+- Opened http://localhost:3000.
+
+## 3. Testing Demonstration
+
+### Test 1: Website Reconnaissance
+Inspected the homepage, search functionality, login and registration pages.
+
+### Test 2: HTTP Analysis
+Used Chrome Developer Tools to inspect HTTP requests, responses and headers.
+
+### Test 3: SQL Injection
+Tested the login form with a SQL injection payload and observed the reported login result.
+
+### Test 4: Cross-Site Scripting
+Tested an XSS payload in the search field and observed a JavaScript alert popup.
+
+### Test 5: Security Headers
+Inspected response headers such as X-Content-Type-Options and X-Frame-Options.
+
+### Test 6: Cookie and JWT Analysis
+Inspected browser cookies and observed JWT storage in Local Storage after login.
+
+### Test 7: Authentication Testing
+Tested invalid login credentials and observed the application's error response.
+
+### Test 8: Rate Limiting
+Performed three failed login attempts and observed no visible warning or temporary block.
+
+### Test 9: Access Control
+Checked administration page access after logout and verified access denial in Incognito and after hard refresh.
+
+## 4. Remediation
+Reviewed secure coding recommendations for SQL Injection, XSS, authentication, JWT storage and access control.
+
+## 5. Conclusion
+The demonstration provided practical experience in identifying, testing, analyzing and documenting common web application security risks in a controlled local environment.

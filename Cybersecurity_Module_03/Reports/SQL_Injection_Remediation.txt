@@ -1,0 +1,22 @@
+
+1. Unsafe code (avoid):
+
+
+const query = "SELECT * FROM users WHERE email = '" + email + "'";
+
+-------------------------------------------------------------------
+
+
+2. Secure code (recommended):
+
+
+
+db.get(
+  "SELECT * FROM users WHERE email = ?",
+  [email],
+  (err, user) => {
+    // Handle result securely
+  }
+);
+
+------------------------------------------------------

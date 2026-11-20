@@ -1,0 +1,24 @@
+--------------------------------------
+Unsafe approach:
+
+
+if (userLoggedIn) {
+    showAdminDashboard();
+}
+
+--------------------------------------
+
+Secure approach (conceptual):
+
+
+if (user.role === "admin" && isAuthenticated(user)) {
+    showAdminDashboard();
+} else {
+    return response.status(403).send("Forbidden");
+}
+
+--------------------------------------
+
+
+
+

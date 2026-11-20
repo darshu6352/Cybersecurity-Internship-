@@ -1,0 +1,50 @@
+# MODULE 03 – REMEDIATION RECOMMENDATIONS
+
+## 1. SQL Injection
+- Use parameterized queries and prepared statements.
+- Never concatenate untrusted input into SQL queries.
+- Use secure password hashing.
+- Apply least-privilege database permissions.
+
+## 2. Cross-Site Scripting (XSS)
+- Use output encoding.
+- Prefer textContent instead of unsafe innerHTML.
+- Sanitize untrusted HTML when HTML input is required.
+- Configure Content Security Policy.
+- Validate input on the server side.
+
+## 3. Security Headers
+- Review Content-Security-Policy configuration.
+- Configure X-Content-Type-Options.
+- Configure X-Frame-Options or CSP frame-ancestors.
+- Enable HSTS when the application is served over HTTPS.
+
+## 4. JWT and Cookie Security
+- Protect authentication tokens from JavaScript access where appropriate.
+- Consider HttpOnly, Secure and SameSite cookie attributes.
+- Use appropriate token expiration.
+- Invalidate sessions during logout.
+- Protect against XSS and CSRF.
+
+## 5. Authentication Security
+- Use bcrypt or Argon2 for password hashing.
+- Implement server-side login rate limiting.
+- Consider Multi-Factor Authentication.
+- Monitor repeated failed login attempts.
+
+## 6. Broken Access Control
+- Enforce authorization checks on the server.
+- Apply role-based access control.
+- Follow the principle of least privilege.
+- Deny access by default.
+- Verify permissions for every protected request.
+
+## 7. General Security Practices
+- Keep software dependencies updated.
+- Avoid exposing sensitive error details.
+- Maintain security logs and alerts.
+- Perform regular vulnerability assessments.
+- Retest after applying security fixes.
+
+## Conclusion
+These recommendations help improve web application security and reduce the risk of common OWASP Top 10 vulnerabilities.
