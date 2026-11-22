@@ -1,1 +1,50 @@
+WINDOWS SECURITY LOG ANALYZER
+TESTING REPORT
 
+Project Name: Windows Security Log Analyzer
+Testing Environment: Windows 10
+Language: Python
+Library: Pandas
+
+1. TEST CASE: Successful Login Detection
+Event ID: 4624
+Expected Result: Successful login event should be identified.
+Status: PASS (sample event tested)
+
+2. TEST CASE: Failed Login Detection
+Event ID: 4625
+Expected Result: Failed login event should be identified.
+Status: PASS (sample event tested)
+
+3. TEST CASE: Multiple Failed Login Attempts
+Event ID: 4625
+Expected Result: Three or more failed attempts should generate an alert.
+Status: PASS (sample data tested)
+
+4. TEST CASE: New Account Detection
+Event ID: 4720
+Expected Result: New user account event should be identified.
+Status: PASS (sample event tested)
+
+5. TEST CASE: Logout Detection
+Event ID: 4634
+Expected Result: Logout event should be identified.
+Status: PASS (sample event tested)
+
+6. TEST CASE: Report Generation
+Expected Result: Security analysis report should be generated successfully.
+Status: PASS
+
+ACTUAL WINDOWS LOG ANALYSIS
+
+Total Events Analyzed: 100
+Successful Login Events: 98
+Failed Login Events: 0
+New Account Events: 0
+Logout Events: 2
+
+NOTE:
+The actual Windows CSV export contained 98 successful login events and 2 logout events. The other event types were tested using sample data. The alert threshold is an indicator for investigation and does not prove an attack.
+
+CONCLUSION:
+The Windows Security Log Analyzer successfully processed the exported Windows Security Event Logs and generated a security report.
