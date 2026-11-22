@@ -1,1 +1,6 @@
 
+logs/windows_security_events.csv
+reports/security_report.txt
+__pycache__/
+*.pyc
+
