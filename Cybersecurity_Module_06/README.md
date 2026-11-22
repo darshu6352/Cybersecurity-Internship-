@@ -1,1 +1,1 @@
-![Windows Security Architecture](screenshots/Windows_Security_Architecture.png)
+![Windows Security Architecture](Windows_Security_Architecture.png)
